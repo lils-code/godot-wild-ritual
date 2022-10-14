@@ -1,0 +1,2 @@
+# godot-wild-ritual
+help
