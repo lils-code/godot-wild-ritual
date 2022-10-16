@@ -1,1 +1,74 @@
-{"0_1":{"link":"1_1","offset":{"x":-160,"y":40},"start_id":"1"},"1_1":{"dialogue":"this is a test!!","offset":{"x":40,"y":40},"options":{"0":{"link":"1_2","text":""}},"size":{"x":200,"y":251},"speaker":"aaaa"},"1_2":{"dialogue":"bye","offset":{"x":300,"y":40},"options":{"1":{"link":"1_3","text":"goodbye"},"0":{"link":"END","text":"byeee"}},"size":{"x":200,"y":251},"speaker":"b"},"1_3":{"dialogue":"ccccc","offset":{"x":520,"y":220},"options":{"0":{"link":"END","text":""}},"size":{"x":200,"y":201},"speaker":"c"},"comments":{},"start":{"1":"0_1"},"strays":{},"variables":{}}
+{
+    "0_1": {
+        "link": "1_1",
+        "offset": {
+            "x": -160,
+            "y": 40
+        },
+        "start_id": "1"
+    },
+    "1_1": {
+        "dialogue": "this is a test!!",
+        "offset": {
+            "x": 40,
+            "y": 40
+        },
+        "options": {
+            "0": {
+                "link": "1_2",
+                "text": ""
+            }
+        },
+        "size": {
+            "x": 200,
+            "y": 251
+        },
+        "speaker": "aaaa"
+    },
+    "1_2": {
+        "dialogue": "bye",
+        "offset": {
+            "x": 300,
+            "y": 40
+        },
+        "options": {
+            "1": {
+                "link": "1_3",
+                "text": "goodbye"
+            },
+            "0": {
+                "link": "END",
+                "text": "byeee"
+            }
+        },
+        "size": {
+            "x": 200,
+            "y": 251
+        },
+        "speaker": "b"
+    },
+    "1_3": {
+        "dialogue": "ccccc",
+        "offset": {
+            "x": 520,
+            "y": 220
+        },
+        "options": {
+            "0": {
+                "link": "END",
+                "text": ""
+            }
+        },
+        "size": {
+            "x": 200,
+            "y": 201
+        },
+        "speaker": "c"
+    },
+    "comments": {},
+    "start": {
+        "1": "0_1"
+    },
+    "strays": {},
+    "variables": {}
+}

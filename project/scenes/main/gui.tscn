@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://resources/materials/textures/icons/center_indicator.png" type="Texture" id=1]
 [ext_resource path="res://resources/materials/textures/icons/dialogue_bg.png" type="Texture" id=2]
+[ext_resource path="res://resources/themes/main_theme.tres" type="Theme" id=3]
 
 [node name="gui" type="Control"]
 anchor_right = 1.0
@@ -26,3 +27,43 @@ margin_top = -0.160034
 margin_right = 0.47998
 margin_bottom = 0.199951
 texture = ExtResource( 2 )
+
+[node name="button_hbox" type="HBoxContainer" parent="dialogue_bg"]
+anchor_left = 0.284
+anchor_top = 0.694
+anchor_right = 0.716
+anchor_bottom = 0.906
+margin_left = 0.279999
+margin_top = 0.160004
+margin_right = -0.280029
+margin_bottom = -0.160004
+custom_constants/separation = 128
+alignment = 1
+
+[node name="option_1" type="Button" parent="dialogue_bg/button_hbox"]
+margin_right = 175.0
+margin_bottom = 76.0
+theme = ExtResource( 3 )
+text = "option 1"
+
+[node name="option_2" type="Button" parent="dialogue_bg/button_hbox"]
+margin_left = 303.0
+margin_right = 478.0
+margin_bottom = 76.0
+theme = ExtResource( 3 )
+text = "option 1"
+
+[node name="dialogue" type="RichTextLabel" parent="dialogue_bg"]
+anchor_left = 0.032
+anchor_top = 0.097
+anchor_right = 0.968
+anchor_bottom = 0.625
+margin_left = 0.439999
+margin_top = 0.079998
+margin_right = -0.440063
+theme = ExtResource( 3 )
+text = "this is a test of the rich text system
+can i 
+ooooh i can
+:3"
+scroll_active = false

@@ -16,7 +16,7 @@ var total_y_rot : float = 0
 func _ready() -> void:
 	cam.fov = fov
 	
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event : InputEvent) -> void:
 	if Input.is_action_pressed("ui_cancel"):
