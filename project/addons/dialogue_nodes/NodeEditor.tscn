@@ -31,7 +31,7 @@ __meta__ = {
 }
 
 [node name="ToolBar" type="HBoxContainer" parent="Main"]
-margin_right = 1272.0
+margin_right = 1912.0
 margin_bottom = 20.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -76,8 +76,8 @@ switch_on_hover = true
 
 [node name="Workspace" type="HSplitContainer" parent="Main"]
 margin_top = 24.0
-margin_right = 1272.0
-margin_bottom = 696.0
+margin_right = 1912.0
+margin_bottom = 1056.0
 size_flags_vertical = 3
 script = ExtResource( 7 )
 __meta__ = {
@@ -86,14 +86,14 @@ __meta__ = {
 nodeScenes = [ "res://addons/dialogue_nodes/nodes/StartNode.tscn", "res://addons/dialogue_nodes/nodes/DialogueNode.tscn", "res://addons/dialogue_nodes/nodes/CommentNode.tscn", "res://addons/dialogue_nodes/nodes/SignalNode.tscn", "res://addons/dialogue_nodes/nodes/SetNode.tscn", "res://addons/dialogue_nodes/nodes/ConditionNode.tscn" ]
 
 [node name="SidePanel" type="VSplitContainer" parent="Main/Workspace"]
-margin_right = 1272.0
-margin_bottom = 672.0
+margin_right = 1912.0
+margin_bottom = 1032.0
 rect_min_size = Vector2( 150, 0 )
 rect_clip_content = true
 
 [node name="Files" type="ItemList" parent="Main/Workspace/SidePanel"]
-margin_right = 1272.0
-margin_bottom = 672.0
+margin_right = 1912.0
+margin_bottom = 1032.0
 size_flags_vertical = 3
 allow_rmb_select = true
 script = ExtResource( 9 )
@@ -155,9 +155,9 @@ __meta__ = {
 }
 
 [node name="Statusbar" type="HBoxContainer" parent="Main"]
-margin_top = 700.0
-margin_right = 1272.0
-margin_bottom = 720.0
+margin_top = 1060.0
+margin_right = 1912.0
+margin_bottom = 1080.0
 
 [node name="PanelToggle" type="TextureButton" parent="Main/Statusbar"]
 margin_right = 30.0

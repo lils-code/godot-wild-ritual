@@ -1,6 +1,6 @@
 [gd_resource type="StyleBoxTexture" load_steps=3 format=2]
 
-[ext_resource path="res://resources/materials/textures/icons/button_outline.png" type="Texture" id=1]
+[ext_resource path="res://resources/materials/textures/icons/button_hover.png" type="Texture" id=1]
 
 [sub_resource type="ProxyTexture" id=1]
 flags = 4
@@ -13,7 +13,8 @@ content_margin_top = 19.0
 content_margin_bottom = 19.0
 texture = SubResource( 1 )
 region_rect = Rect2( 0, 0, 150, 150 )
-margin_left = 45.3095
+margin_left = 41.7431
 margin_right = 38.0599
 margin_top = 45.4263
 margin_bottom = 34.3767
+modulate_color = Color( 0.772549, 0.482353, 0.341176, 1 )
