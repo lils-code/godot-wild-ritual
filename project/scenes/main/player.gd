@@ -16,7 +16,7 @@ var total_y_rot : float = 0
 func _ready() -> void:
 	cam.fov = fov
 	
-	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event : InputEvent) -> void:
 	if Input.is_action_pressed("ui_cancel"):
@@ -29,10 +29,14 @@ func _input(event : InputEvent) -> void:
 		y_rot = clamp(total_y_rot + y_rot, -0.4 * PI, 0.4 * PI) - total_y_rot
 		cam.rotate(cam.transform.basis.x, y_rot)
 		total_y_rot += y_rot
-		
-		var result : Dictionary = get_world().direct_space_state.intersect_ray(cam.global_transform.origin, cam.global_transform.basis.z * -10, [self], 0x7FFFFFFF, false, true)
-		if result:
-			print(result.collider.get_parent().e.character)
+
+func _process(delta):
+	var result : Dictionary = get_world().direct_space_state.intersect_ray(
+		cam.global_transform.origin, cam.global_transform.basis.z * -10,
+		[], 0x7FFFFFFF,
+		false, true
+	)
+	print(result)
 
 func _physics_process(delta : float) -> void:
 	var dir_x : float = 1 if Input.is_action_pressed("right") else 0
